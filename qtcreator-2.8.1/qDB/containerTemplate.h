@@ -156,7 +156,7 @@ public:
     //fine della collezione
     Iterator end();
     //operatore di indicizzazione
-    T& operator[](const Iterator&);
+    T& operator[](Iterator&);
 
     //METODI PER UTILIZZARE const_Iteratore
     //inizio della collezione
@@ -368,7 +368,7 @@ typename Container<T>::Iterator Container<T>::end() {
 }
 //operatore di indicizzazione
 template <class T>
-T& Container<T>::operator[](const Iterator& it) {
+T& Container<T>::operator[](Iterator& it) {
     //consente di modificare l'oggetto puntato da it
     //controllo il campo riferimenti, se è > 0 creo una
     //copia profonda altrimenti è possibile modificare
@@ -411,7 +411,29 @@ T& Container<T>::operator[](const Iterator& it) {
          }
          prec->next = it.p->next;
          return prec->info;*/
-    return it.p->info;
+
+    //return it.p->info;
+    ItemPointer r=first, prec=0,q;
+    bool trovato=false;
+    first=0;
+    while(r!=0 && !trovato){
+        q=new ContainerItem(r->info, r->next);
+        if(prec==0){
+            first=q;
+            prec=q;
+        }else{
+            prec->next=q;
+            prec=prec->next;
+        }
+
+        if(r==it.p){
+            trovato=true;
+        }
+        r=r->next;
+    }
+    //sposto l'iteratore sull'oggetto nella copia profonda
+    it.p=prec;
+    return prec->info;
 
 }
 

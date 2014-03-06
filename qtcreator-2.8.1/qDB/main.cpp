@@ -40,16 +40,19 @@ int main()
     cout<<c4<<"\n";
     */
 
-    /*cout<<"CON IT2 \n";
+    cout<<"CON IT2 \n";
 
     Container<SmartpDip>::Iterator it2=c2->begin();
-    cout<<(*c2)[it2]<<"\n";
+    cout<<(*c2)[it2]->getNome()<<"\n";
+    cout<<(*c2)[it2]->getNome()<<"\n";
+    cout<<(*c2)<<"\n";
 
+    /*
     ++it2;
-    cout<<(*c2)[it2]<<"\n";*/
+    cout<<(*c2)[it2]<<"\n";
     c2->remove(smtp);
-    cout<<*c2;
-    cout<<"CON ITE const \n";
+    cout<<*c2;*/
+    /*cout<<"CON ITE const \n";
     Container<SmartpDip>::const_Iterator ite=c2->begin();
     cout<<(*c2)[ite]->getNome()<<(*c2)[ite]->getCognome()<<"\n";
 
@@ -68,7 +71,7 @@ int main()
 
     cout<<"C: \n"<<*c3<<"\n";
     (*c3)[c3->begin()]=new CapoTurno("Mario","Rotti",1234,1500.0,200.0,33478);
-    cout<<*c3<<"\n";
+    cout<<*c3<<"\n";*/
 
     return 0;
 }
