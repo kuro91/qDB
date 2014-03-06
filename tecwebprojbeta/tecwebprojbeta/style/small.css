@@ -1,0 +1,23 @@
+/* FOGLIO DI STILE PER IL PROGETTO DI TECWEB 2014 VERSIONE SMALL */
+
+#nav ul li {
+	padding: 0;
+}
+
+#nav li {
+	width: 100%;
+}
+
+#nav a {
+	width: 100%;
+	padding: 15px 0;
+	display: block;
+}
+
+#nav a:hover {
+	background-color: #f5d907;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-right: 0;
+	border-left: 0;
+}

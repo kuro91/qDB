@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="utenti.xsl"?>
+<utenti xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="utenti.xsd">
+	<utente>
+		<username>damarin</username>
+		<useremail>damarin82@gmail.com</useremail>
+		<password>1234</password>
+		<tipo>admin</tipo>
+	</utente>
+	<utente>
+		<username>gigio</username>
+		<useremail>gigio@pippo.it</useremail>
+		<password>2222</password>
+		<tipo>user</tipo>
+	</utente>
+</utenti>

@@ -1,0 +1,156 @@
+/* FOGLIO DI STILE PER IL PROGETTO DI TECWEB 2014 VERSIONE PRINT */
+/*DA FINIRE*/
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 11pt;
+	background-color:#7d7d7d;
+	vertical-align: baseline;
+}
+/* sposta i contenuti fuori dallo schermo */
+.shiftsx {
+	text-indent: -999px;
+}
+
+/* definizione del main cioè la pagina centrale */
+#main {
+	min-height: 100%;
+	background-color: #FFFFFF;
+    padding: 0 2em;
+    max-width: 80em;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* definizione header con il logo e l'accesso */
+#header {
+	padding: 0.2em;
+	height: 50pt;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+#logo {
+	display: none;
+}
+
+#acces {
+	display:none;
+}
+
+/* definizione del menù di navigazione con la lista di link */
+#nav {
+	display:none;
+}
+
+
+/* definizione del path che contiene uno span con l'indicazione della pagina corrente */
+#path {
+	padding:1em 1.5em;
+	float: none;
+	text-transform: uppercase;
+	border-top: 2pt solid #000000;
+	border-bottom: 2pt solid #000000;
+}
+
+#path span {
+	color: blue;
+	padding-left: 10pt;
+}
+
+/* definizione corpo */
+#corpo {
+	float: none;
+	width: 100%;
+}
+
+/* definizione class display */
+.display {
+	padding:1.5em;
+	margin-top: 20pt;
+	background-image: none;
+	border: #000000 solid 1pt;
+	border-radius: 7pt;
+}
+
+
+.display h2 {
+	margin: 0;
+	font-size: x-large;
+	font-family: fantasy, Helvetica; 
+}
+
+.display hr {
+	height: 10pt;
+	background-color: #000000;
+	margin: 0;
+	border-style: none;
+}
+
+.miniature {
+	height: 200px;
+	width: 130px;
+	margin-top: 20px;
+	margin-right: 40px;
+	display: inline-block;
+	background-color: #3d3d3d;
+}
+
+.miniature img {
+	margin: 0;
+	padding: 0;
+	height: 4cm;
+	width: 2.8cm;
+}
+
+.miniature span {
+	display: none;
+}
+/* definizione del footer */
+#footer {
+	display:none;
+}
+
+/* CLASS Forms */
+
+.forms {
+	margin: 1em;
+	font-size: larger;
+}
+
+.forms fieldset, legend {
+	color: #000000;
+}
+
+.forms fieldset {
+	padding: 2% 4%;
+	border-color: #000000;
+	border-radius: 10px; 
+}
+
+.forms label {
+	float:left;
+	margin-right: 0.5em;
+	text-align: right;
+	font-weight: bold;
+}
+
+.forms label, input {
+	margin: 1em 0.5em;
+	position: relative;
+	float: left;
+}
+
+.span_err {
+	display: inline-block;
+	margin: 1em 0.5em;
+	color:#ff0000;
+}
+
+/* class input_label */
+.input_label {
+	width: 100%;
+	float: left;	
+} 

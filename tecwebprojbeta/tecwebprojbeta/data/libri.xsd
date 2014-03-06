@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.localhost"
+	xmlns="http://www.localhost"
+	elementFormDefault="qualified" >
+	<xsd:element name="libri" type="Tlibri"/>
+		<xsd:ComplexType name="Tlibri">
+			<xsd:sequence>
+				<xsd:element name="libro" type="Tlibro"/>
+			</xsd:sequence>
+		</xsd:ComplexType>
+		<!-- definizione Tlibro -->
+		<xsd:ComplexType name="Tlibro">
+			<xsd:attribute name="id" type="Tid" use="required"/>
+			<xsd:sequence>
+				<xsd:element name="img" type="xsd:string"/>
+				<xsd:element name="titolo" type="xsd:string"/> 
+				<xsd:element name="autore" type="xsd:string"/>
+				<xsd:element name="genere" type="Tgenere"/>
+				<xsd:element name="datauscita" type="xsd:date"/>
+				<xsd:element name="collana" type="xsd:string"/>
+				<xsd:element name="numeroincollana" type="xsd:integer"/>
+				<xsd:element name="editore" type="xsd:string"/>
+				<xsd:element name="descrizione" type="xsd:string"/>
+				<xsd:element name="valutazione" type="Tvalutazione"/>
+			</xsd:sequence>
+			<xsd:element name="commenti" type="Tcommenti"/>			
+		</xsd:ComplexType>
+		<!-- definisco Tid -->
+		<xsd:SimpleType name="Tid">
+			<xsd:restriction base="xsd:integer">
+				<xsd:minInclusive value="001"/>
+				<xsd:maxInclusive value="999"/>
+			</xsd:restriction>
+		</xsd:SimpleType>
+		<!-- definisco Tgenere -->
+		<xsd:SimpleType name="Tgenere"/>
+			<xsd:restriction base="xsd:string"/>
+				<xsd:enumeration value="Fantasy"/>
+				<xsd:enumeration value="Horror"/>
+				<xsd:enumeration value="Gialli"/>
+				<xsd:enumeration value="Narrativa"/>
+				<xsd:enumeration value="Fantascienza"/>
+				<xsd:enumeration value="Romanzi Storici"/>
+			</xsd:restriction>
+		</xsd:SimpleType>
+		<!-- definisco Tvalutazione -->
+		<xsd:SimpleType name="Tvalutazione">
+			<xsd:restrction base="xsd:integer">
+				<xsd:minInclusive value="0"/>
+				<xsd:maxInclusive value="5"/>
+			</xsd:restriction>
+		</xsd:SimpleType>
+		<!-- definisco Tcommenti -->
+		<xsd:ComplexType name="Tcommenti">
+			<xsd:sequence>
+				<xsd:element name="commento" type="Tcommento"/>
+			</xsd:sequence>
+		</xsd:ComplexType>
+		<!-- definisco Tcommento -->
+		<xsd:ComplexType name="Tcommento">
+			<xsd:sequence>
+				<xsd:element name="user" type="xsd:string"/>
+				<xsd:element name="datacommento" type="xsd:data"/>
+				<xsd:element name="testo" type="xsd:string"/>
+				<xsd:element name="voto" type="Tvoto"/>
+			</xsd:sequence>
+		</xsd:ComplexType>
+		<!-- definisco Tvoto -->
+		<xsd:SimpleType name="Tvoto">
+			<xsd:restrction base="xsd:integer">
+				<xsd:minInclusive value="0"/>
+				<xsd:maxInclusive value="5"/>
+			</xsd:restriction>
+		</xsd:SimpleType>
+	</xsd:element>
+</xsd:schema>

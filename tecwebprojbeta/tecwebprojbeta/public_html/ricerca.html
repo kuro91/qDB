@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it" xml:lang="it" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>registrazione - Libreria di Valyria</title>
+		<link rel="icon" type="image/png" href="../img/icona_titolo.png" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="keywords" content="Inserisci i contenuti" />
+		<meta name="description" content="Inserisci le descrizioni" /> 
+		<link href="../style/screen.css" rel="stylesheet" type="text/css" media="screen"/> 
+		<link media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)" href="../style/small.css" rel="stylesheet" type="text/css">
+		<link href="../style/print.css" rel="stylesheet" type="text/css" media="print"/>
+		<script lenguage="text/javascript" src="../js/search_control.js"></script>
+	</head>
+	<body onload="controlli()">
+	<div id="main">
+		<div id="header">
+			<h1 id="logo" class="shiftsx">Libreria di Valyria</h1>
+		</div>
+		<div id="path">
+			<span>Ti trovi in > Ricerca</span>
+		</div>
+		<div id="corpo">
+			<div class="display" >
+				<h2>Ricerca</h2>
+				<hr />
+				<p>Inserire i dati nel form di ricerca</p>
+				<form id="ricerca" class="forms" method="post">
+					<fieldset>
+						<legend>Inserimento dati</legend>
+						<div class="input_label">
+							<label for="autore">Autore: </label>
+							<input id="form_autore" name="autore" type="text" onfocus="delTextFocus(this)" /><span class="span_err" id="author"></span>
+						</div>
+						<div class="input_label">
+							<label for="titolo">Titolo: </label>
+							<input id="form_titolo" name="titolo" type="text" onfocus="delTextFocus(this)" /><span class="span_err" id="title" ></span>
+						</div>
+						<div class="input_label">
+							<label for="anno">Anno: </label>
+							<input id="form_anno" name="anno" type="text" onfocus="delTextFocus(this)" /><span class="span_err" id="year" ></span>
+						</div>
+						<div class="input_label">
+							<label for="genere">Genere: </label>
+							<select id="form_genere" name="genere">
+								<option value="" selected="selected">---</option>
+								<option value="Gialli">Gialli</option>
+								<option value="Horror">Horror</option>
+								<option value="Fantascienza">Fantascienza</option>
+								<option value="Fantasy">Fantasy</option>
+								<option value="Narrativa">Narrativa</option>
+							</select>
+						</div>
+						<div class="input_label">
+							<label for="collana">Collana: </label>
+							<input id="form_collana" name="collana" type="text" onfocus="delTextFocus(this)" /><span class="span_err" id="coll" ></span>
+						</div>
+						<div id="error_label">
+							<span class="span_err" id="no_data" ></span>
+						</div>
+						<input type="button" value="Cerca" onclick="form_control()" /><br />
+					</fieldset>
+				</form>
+				<a href="index.html">Torna alla HOME</a>
+			</div>
+		</div>
+		<div id="footer">
+			<p>Copyright 2013-2014</p>
+		</div>
+	</div>
+	</body>
+</html>

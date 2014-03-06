@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="it" xml:lang="it" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>acceso - Libreria di Valyria</title>
+		<link rel="icon" type="image/png" href="../img/icona_titolo.png" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="keywords" content="Inserisci i contenuti" />
+		<meta name="description" content="Inserisci le descrizioni" /> 
+		<link href="../style/screen.css" rel="stylesheet" type="text/css" media="screen"/> 
+		<link media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)" href="../style/small.css" rel="stylesheet" type="text/css">
+		<link href="../style/print.css" rel="stylesheet" type="text/css" media="print"/>
+		<script lenguage="text/javascript" src="../js/acces_control.js"></script>
+	</head>
+	<body onload="controlli()">
+	<div id="main">
+		<div id="header">
+			<h1 id="logo" class="shiftsx">Libreria di Valyria</h1>
+		</div>
+		<div id="path">
+			<span>Ti trovi in > Accesso</span>
+		</div>
+		<div id="corpo">
+			<div class="display" >
+				<h2>Accedi</h2>
+				<hr />
+				<p>Inserire e-mail e password per effettuare l'accesso se non sei ancora registrato nel nostro sito clicca <a href="registrazione.html" alt="pagina di registrazione">REGISTRATI</a></p>
+				<form id="accesso" class="forms" method="post">
+					<fieldset>
+						<legend>Inserimento dati</legend>
+						<div class="input_label">
+							<label for="useremail">User e-mail: </label>
+							<input id="form_useremail" name="useremail" type="text" onfocus="delTextFocus(this)" /><span class="span_err" id="uemail" ></span>
+						</div>
+						<div class="input_label">
+							<label for="password">Password: </label>
+							<input id="form_password" name="password" type="password" onfocus="delTextFocus(this)" /><span class="span_err" id="pass" ></span>
+						</div>
+						<input type="button" value="Accedi" onclick="form_control()" /><br />
+					</fieldset>
+				</form>
+				<a href="index.html">Torna alla HOME</a>
+			</div>
+		</div>
+		<div id="footer">
+			<p>Copyright 2013-2014</p>
+		</div>
+	</div>
+	</body>
+</html>

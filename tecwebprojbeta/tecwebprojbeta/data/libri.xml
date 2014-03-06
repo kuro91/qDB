@@ -1,0 +1,50 @@
+<!--collana: serie di libri, es collana di harry potter, numeroincollana es. libro 1 harry potter-->
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<libri xmlns="http://www.localhost" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost libri.xsd">
+	<libro id="001">
+		<img>../img/41JPrqavykL._.jpg</img>
+		<titolo>Il Grande Inverno</titolo>
+		<autore>George R.R. Martin</autore>
+		<genere>Fantasy</genere>
+		<datauscita>2001-07-17</datauscita>
+		<collana>Le cronache del ghiaccio e del fuoco</collana>
+		<numeroincollana>2</numeroincollana>
+		<editore>Mondadori</editore>
+		<descrizione>Nella terra dove le stagioni possono durare intere generazioni, divampa la guerra tra la bella e corrotta regina Cersei Lannister e i lord dei Sette Regni fedeli ai coraggiosi signori di Grande Inverno. Intanto, nelle grandi pianure orientali, la principessa Daenerys Targaryen, ultima discendente della dinastia del Drago, si prepara con i suoi poteri straordinari alla riconquista del regno dei suoi avi. Ma la vera minaccia sono gli Estranei che avanzano da nord, esseri misteriosi, per secoli ritenuti a torto frutto della fantasia. Odiano la vita, il fuoco, il calore, l'estate, perché essi sono la morte, il freddo, il ghiaccio e l'inverno. La fine dell'estate è vicina e solo un nuovo prodigio potrà squarciare le tenebre.</descrizione>
+		<valutazione>5</valutazione>
+		<commenti>
+			<commento>
+				<user>gigio</user>
+				<datacommento>2014-01-28</datacommento>
+				<testo>Questo libro fa cagare</testo>
+				<voto>0</voto>
+			</commento>
+			<commento>
+				<user>giovanni</user>
+				<datacommento>2014-01-29</datacommento>
+				<testo>Non è vero un cazzo !! Tu di libri non capisci un cazzo</testo>
+				<voto>5</voto>
+			</commento>
+		</commenti>
+	</libro>
+
+	<libro id="002">
+		<img>../img/41+AUyOK4BL._SY300_.jpg</img>
+		<titolo>Il lIbro delle Anime</titolo>
+		<autore>Glenn Cooper</autore>
+		<genere>Horror</genere>
+		<datauscita>2011-06-01</datauscita>
+		<collana>Nessuna</collana>
+		<numeroincollana>0</numeroincollana>
+		<editore>Tea</editore>
+		<descrizione>È un semplice libro antico, ma custodisce un segreto. Un segreto che è stato scritto col sangue nel 1297 da innumerevoli scrivani coi capelli rossi e con gli occhi verdi, forse toccati dalla grazia divina, forse messaggeri del diavolo. Che è riapparso nel 1334, in una lettera vergata da un abate ormai troppo anziano per sopportare il peso di quel mistero. Che, nel corso del XVI secolo, ha illuminato la strada di un teologo, i sogni di un visionario e le parole di un genio. È un semplice libro antico, ma sta per scatenare l'inferno. Perché quel libro dovrebbe trovarsi nella Biblioteca dei Morti, la sconfinata raccolta di volumi in cui è riportata la data di nascita e di morte di tutti gli uomini vissuti dall'VIII secolo in poi. E, dopo essere rimasto sepolto sotto la polvere della Storia per oltre settecento anni, adesso è riemerso ed è diventato un'ossessione per Will Piper, deciso a cancellare il dolore che la Biblioteca ha portato nella sua vita; per Henry Spence, che ha dedicato la sua esistenza alla soluzione dell'enigma e che ormai ha i giorni contati; per Malcolm Frazier, il capo della sicurezza della Biblioteca, determinato a uccidere pur d'impedire al mondo di conoscere la verità. Un'ossessione che inevitabilmente porta altro dolore, altri enigmi, altro sangue.
+		</descrizione>
+		<valutazione></valutazione>
+		<commenti>
+		</commenti>
+	</libro>
+
+	
+
+</libri>
